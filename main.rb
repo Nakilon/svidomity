@@ -2,7 +2,7 @@ require "yaml"
 preamble, yaml, _ = File.read("main.yaml").split("\n\n")
 puts preamble
 YAML.load(yaml).each do |region, resources|
-  puts "# #{region}"
+  puts "## #{region}"
   puts "| название | уровень<br>свидомости | пруфы |"
   puts "| -------- | --------------------- | ----- |"
   puts( resources.map do |req, opt|
