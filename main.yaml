@@ -2,24 +2,34 @@
 
 ---
 новостные сайты Мелитополя:
-  ? https://mv.org.ua false 107291 Местные Вести
-  : :links:
+  https://mv.org.ua false 107291 Местные Вести:
+    :chefs: генеральный директор медиахолдинга Михаил Кумок
+    :links:
     - 2 https://www.mv.org.ua/news/264242-stalo_izvestno_imja_avtora_legendarnoi_frazy_kotoryi_ukazal_russkomu_korablyu_napravlenie.html 220308
     - 2 https://www.mv.org.ua/news/264254-rashisty_pytayut_sotrudnikov_zaporozhskoi_aes_-_galushenko.html 220309
-  ? https://0619.com.ua false 1605662 0619
-  : {}
-  ? https://ria-m.tv true 78605 Весь Мелитополь Онлайн
-  : :links:
+  https://0619.com.ua false 1605662: {}
+  https://ria-m.tv true 78605 РИА Мелитополь:
+    :links:
     - 1 https://ria-m.tv/news/280194/jiteley_melitopolya_priglashayut_na_miting_v_podderjku_mera_ivana_fedorova.html 220313 Андрій Чаплінський
     - 2 https://ria-m.tv/news/280190/gaulyaytera_melitopolya_galinu_danilchenko_trollit_vsya_ukraina_(foto).html 220313 Николай Герасимов
     - 1 https://ria-m.tv/news/280178/chechentsyi_v_melitopole_uje_razdayut_payku_na_ploschadi_(video).html 220313 Марк Наумов
     - 1 https://ria-m.tv/news/280175/zamerz_na_smert_okkupantyi_prikovali_tsepyu_svoego_granatometchika_chtobyi_tot_ne_sbejal.html 220312
     - 2 https://ria-m.tv/news/280151/voennyim_rf_uzakonili_maroderstvo_na_okkupirovannyih_territoriyah.html 220312 Андрій Чаплінський
     - 1 https://ria-m.tv/news/279415/cherez_melitopol_okkupantyi_vezut_v_avtobusah_lyudey_na_postanovochnyiy_miting.html 220304
-  ? http://region-plus.tv 5544289 false МТВ-плюс
-  : :comment: заброшен
-  ? https://news.mspravka.info 862102 true Наш Город
-  : :chefs: Главный редактор Денис Савенков, Директор Даниил Енин
+  http://region-plus.tv false 5544289 МТВ-плюс:
+    :chefs: владельцы ООО Балицкие Виталий и Александр
+    :comment: заброшен
+  https://news.mspravka.info true 862102 Наш город:
+    :chefs: Главный редактор Денис Савенков, Директор Даниил Енин
     :links:
-    - 1 https://news.mspravka.info/vorog-hvilja-za-hvileju-atakuie-nash-informacijnij-prostir-riznomanitnimi-fejkami/ 20220304 Владимир Клочков
-    - 2 https://news.mspravka.info/na-mirnom-mitinge-rossijskie-voennye-ranili-melitopolca/ 20220302 Михаил Фесенко
+    - 1 https://news.mspravka.info/vorog-hvilja-za-hvileju-atakuie-nash-informacijnij-prostir-riznomanitnimi-fejkami/ 220304 Владимир Клочков
+    - 2 https://news.mspravka.info/na-mirnom-mitinge-rossijskie-voennye-ranili-melitopolca/ 220302 Михаил Фесенко
+  https://www.noviden.org.ua false 3092112 Новый день:
+    :comment: подзаброшен
+  https://mltpl.city false 7978265:
+    :links:
+    - 1 https://mltpl.city/articles/197280/yak-chitati-novini-pid-chas-vijni 220304 Отар Довженко
+    - 1 https://mltpl.city/articles/195173/u-melitopolskomu-kraeznavchomu-muzei-vshanuvali-geroiv-nebesnoi-sotni 220318
+  https://619.com.ua false 5050014:
+    :comment: подзаброшен
+
