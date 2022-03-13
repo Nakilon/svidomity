@@ -15,7 +15,9 @@ YAML.load(yaml).each do |region, resources|
     }#{
       "<br>#{opt[:chefs].gsub ", ", "<br>"}" if opt.key? :chefs
     } | #{_[0].max} | #{
-      _[1].map.with_index{ |_, i| "[[#{i + 1}]](#{_})" }.join(", ")
+      _[1].zip(_[2]).sort_by(&:last).map.with_index{ |(__,*), i| "[[#{i + 1}]](#{__})" }.join(", ")
+    }#{
+      _[3].compact.uniq.sort.map{ |_| "<br>#{_}" }.join
     } |", alexa.to_i]
   end.sort_by(&:last).map(&:first) )
   puts ""
