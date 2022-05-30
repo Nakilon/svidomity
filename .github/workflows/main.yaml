@@ -1,7 +1,9 @@
 on:
   push:
     branches: [master]
-    paths-ignore: [README.md]
+    paths-ignore:
+    - README.md
+    - index.html
 jobs:
   main:
     runs-on: ubuntu-latest
@@ -9,7 +11,8 @@ jobs:
     - uses: actions/checkout@v2
     - timeout-minutes: 1
       run:
-        ruby main.rb > README.md &&
+        ruby yaml2md.rb <main.yaml >README.md &&
+        bundle install && bundle exec ruby md2htm.rb <README.md >index.html &&
         git config --local user.email "$(git log --format='%ae' HEAD^!)" &&
         git config --local user.name "$(git log --format='%an' HEAD^!)" &&
-        git add README.md && git commit -m "[Github Action]" && git push
+        git add README.md index.html && git commit -m "[Github Action]" && git push

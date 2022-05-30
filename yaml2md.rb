@@ -1,5 +1,5 @@
 require "yaml"
-preamble, yaml, _ = File.read("main.yaml").split("\n\n")
+preamble, yaml, _ = ARGF.read.split("\n\n")
 puts preamble
 YAML.load(yaml).each do |region, resources|
   puts "## #{region}"
