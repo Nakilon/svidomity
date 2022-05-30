@@ -12,7 +12,7 @@ jobs:
     - timeout-minutes: 1
       run:
         ruby yaml2md.rb <main.yaml >README.md &&
-        bundle install && bundle exec ruby md2htm.rb <README.md >index.html &&
+        gem install commonmarker && ruby md2htm.rb <README.md >index.html &&
         git config --local user.email "$(git log --format='%ae' HEAD^!)" &&
         git config --local user.name "$(git log --format='%an' HEAD^!)" &&
         git add README.md index.html && git commit -m "[Github Action]" && git push
