@@ -1,14 +1,28 @@
 # Специализированный навигатор по украинским СМИ
 
+# 1 - когда просто недостоверная информация без злого умысла
+# 2 - намеренное разжигаение, фейки и особая лексика
+
 ---
 новостные сайты Мелитополя:
-  https://mv.org.ua нет 107291 Местные Вести:
+  https://mv.org.ua 107291 Местные Вести:
     :chefs: генеральный директор медиахолдинга Михаил Кумок
+    :banned:
+    - 19.04.2021
     :links:
     - 2 https://www.mv.org.ua/news/264242-stalo_izvestno_imja_avtora_legendarnoi_frazy_kotoryi_ukazal_russkomu_korablyu_napravlenie.html 220308
     - 2 https://www.mv.org.ua/news/264254-rashisty_pytayut_sotrudnikov_zaporozhskoi_aes_-_galushenko.html 220309
-  https://0619.com.ua нет 1605662: {}
-  https://ria-m.tv да 78605 РИА Мелитополь:
+  https://0619.com.ua 1605662:
+    :banned:
+    - 09.04.2022
+    :links:
+    - 2 https://www.0619.com.ua/news/3398708/bojoviki-dnr-pogrozuut-stratiti-zahisnikiv-mariupola 220531 Екатерина Охотник
+    - 2 https://www.0619.com.ua/news/3398600/cerez-problemi-z-zabezpecennam-rosijski-okupanti-znovu-pocali-isti-sobak 220531 Екатерина Охотник
+    - 2 https://www.0619.com.ua/news/3386685/mirni-meskanci-rf-zaklikaut-svoih-soldativ-vbivati-ta-katuvati-ukrainskih-ditej-audio 220511 Яна Титоренко
+  https://ria-m.tv 78605 РИА Мелитополь:
+    :banned:
+    - 06.03.2022
+    - 25.04.2022
     :links:
     - 1 https://ria-m.tv/news/280194/jiteley_melitopolya_priglashayut_na_miting_v_podderjku_mera_ivana_fedorova.html 220313 Андрій Чаплінський
     - 2 https://ria-m.tv/news/280190/gaulyaytera_melitopolya_galinu_danilchenko_trollit_vsya_ukraina_(foto).html 220313 Николай Герасимов
@@ -16,20 +30,28 @@
     - 1 https://ria-m.tv/news/280175/zamerz_na_smert_okkupantyi_prikovali_tsepyu_svoego_granatometchika_chtobyi_tot_ne_sbejal.html 220312
     - 2 https://ria-m.tv/news/280151/voennyim_rf_uzakonili_maroderstvo_na_okkupirovannyih_territoriyah.html 220312 Андрій Чаплінський
     - 1 https://ria-m.tv/news/279415/cherez_melitopol_okkupantyi_vezut_v_avtobusah_lyudey_na_postanovochnyiy_miting.html 220304
-  http://region-plus.tv нет 5544289 МТВ-плюс:
+  http://region-plus.tv 5544289 МТВ-плюс:
     :chefs: владельцы ООО Балицкие Виталий и Александр
     :comment: заброшен
-  https://news.mspravka.info да 862102 Наш город:
+  https://news.mspravka.info 862102 Наш город:
     :chefs: Главный редактор Денис Савенков, Директор Даниил Енин
+    :banned:
+    - 12.03.2022
+    - 18.03.2022
     :links:
     - 1 https://news.mspravka.info/vorog-hvilja-za-hvileju-atakuie-nash-informacijnij-prostir-riznomanitnimi-fejkami/ 220304 Владимир Клочков
     - 2 https://news.mspravka.info/na-mirnom-mitinge-rossijskie-voennye-ranili-melitopolca/ 220302 Михаил Фесенко
-  https://www.noviden.org.ua нет 3092112 Новый день:
+  https://www.noviden.org.ua 3092112 Новый день:
     :comment: подзаброшен
-  https://mltpl.city нет 7978265:
+  https://mltpl.city 7978265:
     :links:
     - 1 https://mltpl.city/articles/197280/yak-chitati-novini-pid-chas-vijni 220304 Отар Довженко
     - 1 https://mltpl.city/articles/195173/u-melitopolskomu-kraeznavchomu-muzei-vshanuvali-geroiv-nebesnoi-sotni 220318
-  https://619.com.ua нет 5050014:
-    :comment: подзаброшен
+    - 1 https://mltpl.city/articles/211681/prokuratura-rozsliduye-vikradennya-rosiyanami-skifskogo-zolota-z-melitopolya 220511
+    - 2 https://mltpl.city/articles/206817/yak-rusifikuyut-melitopol-zbirayut-osobisti-dani-ta-obicyayut-vidati-rosijski-pasporti 220416
+  https://619.com.ua 5050014:
+    :links:
+    - 2 https://619.com.ua/node/9301 220508
+    - 1 https://619.com.ua/node/9296 220505
+    - 1 https://619.com.ua/node/9300 220505
 новостные сайты Украины: {}

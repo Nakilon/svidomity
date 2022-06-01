@@ -1,12 +1,11 @@
 require "yaml"
-preamble, yaml, _ = ARGF.read.split("\n\n")
-puts preamble
-YAML.load(yaml).each do |region, resources|
-  puts "## #{region}"
+puts ARGF.gets
+YAML.load(ARGF.read).each do |region, resources|
+  puts "\n## #{region}"
   puts "| название | уровень<br>свидомости | пруфы | заблокирован<br>в РФ |"
   puts "| -------- | :-------------------: | ----- | :------------------: |"
   puts( resources.map do |req, opt|
-    link, banned, alexa, name = req.split(" ", 4)
+    link, alexa, name = req.split(" ", 3)
     _ = opt.fetch(:links, []).map{ |_| _.split(" ", 4).tap{ |_| _[3] = _[3] } }.transpose
     _ = [[0], [], [], []] if _.empty?
     domain = link[/[^\/]+\z/]
@@ -18,7 +17,6 @@ YAML.load(yaml).each do |region, resources|
       _[1].zip(_[2]).sort_by(&:last).map.with_index{ |(__,*), i| "[[#{i + 1}]](#{__})" }.join(", ")
     }#{
       _[3].compact.uniq.sort.map{ |_| "<br>#{_}" }.join
-    } | #{banned}", alexa.to_i]
+    } | #{opt[:banned] ? "да" : "нет"}", alexa.to_i]
   end.sort_by(&:last).map(&:first) )
-  puts ""
 end
