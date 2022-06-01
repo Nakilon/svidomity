@@ -2,8 +2,8 @@ require "yaml"
 puts ARGF.gets
 YAML.load(ARGF.read).each do |region, resources|
   puts "\n## #{region}"
-  puts "| название | уровень<br>свидомости | пруфы | заблокирован<br>в РФ |"
-  puts "| -------- | :-------------------: | ----- | :------------------: |"
+  puts "| название | уровень<br>свидомости | статьи и их авторы | заблокирован<br>в РФ |"
+  puts "| -------- | :-------------------: | ------------------ | :------------------: |"
   puts( resources.map do |req, opt|
     link, alexa, name = req.split(" ", 3)
     _ = opt.fetch(:links, []).map{ |_| _.split(" ", 4).tap{ |_| _[3] = _[3] } }.transpose
