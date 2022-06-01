@@ -15,7 +15,7 @@ jobs:
         bundler-cache: true
     - timeout-minutes: 1
       run:
-        ruby yaml2md.rb <main.yaml >README.md &&
+        ruby yaml2md.rb >README.md &&
         bundle exec ruby md2htm.rb <README.md >index.html &&
         git config --local user.email "$(git log --format='%ae' HEAD^!)" &&
         git config --local user.name "$(git log --format='%an' HEAD^!)" &&
