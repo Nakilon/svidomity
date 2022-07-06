@@ -47,8 +47,8 @@ HEREDOC
 end
 
 process_yaml_file.call("tg", <<~HEREDOC) do |req, opt|
-  puts "| название | уровень<br>свидомости | посты |"
-  puts "| -------- | :-------------------: | ----- |"
+  | название | уровень<br>свидомости | посты |
+  | -------- | :-------------------: | ----- |
 HEREDOC
     link, subs, name = req.split(" ", 3)
     links = opt.fetch(:links, []).map(&:split).transpose
