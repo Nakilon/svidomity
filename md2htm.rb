@@ -1,5 +1,6 @@
 require "commonmarker"
 require "oga"
+require "tablestructured"
 puts <<~HEREDOC
   <!DOCTYPE html>
   <html>
