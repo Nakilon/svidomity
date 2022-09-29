@@ -16,9 +16,10 @@ puts <<~HEREDOC
             TableStructured.new(_).each do |_|
               _.values.first.set "style", (
                 case _.уровеньсвидомости.text
-                when ?2 ; "background-color: #ffeeee"
-                when ?1 ; "background-color: #ffffee"
-                when ?0 ; "background-color: #eeffee"
+                when "2" ; "background-color: #ffeeee"
+                when "1" ; "background-color: #ffffee"
+                when "0" ; "background-color: #eeffee"
+                when "-1" ; "background-color: #ffffee"
                 else ; fail "invalid уровень свидомости #{_.уровеньсвидомости.text.inspect}"
                 end
               )
